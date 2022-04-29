@@ -1,0 +1,45 @@
+# Data
+dataset             = MNIST
+is_image            = True
+image_size          = 28
+center_image = False
+
+loss_eps = 1e-5
+
+beta0               = 4.0
+beta1               = 0.0
+beta_type = linear
+m_inv               = 4.0
+gamma               = 0.04
+
+sampling_eps = 1e-3
+
+numerical_eps       = 1e-9
+
+mixed_score = True
+weighting = reweightedv1
+
+sde = cld
+
+denoising = True
+name = ncsnpp
+
+nonlinearity = relu
+n_channels = 128
+ch_mult = 1,2,2,2
+
+n_resblocks = 8
+attn_resolutions = 16
+resamp_with_conv    = true
+use_fir             = true
+fir_kernel          = 1,3,3,1
+skip_rescale        = true
+resblock_type       = biggan
+progressive         = none
+progressive_input   = residual
+embedding_type      = fourier
+init_scale          = 0.0
+progressive_combine = sum
+fourier_scale       = 16
+image_channels = 1
+dropout = 0
